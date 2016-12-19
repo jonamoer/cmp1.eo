@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 session_start();
 if(isset($_SESSION['username'])){
     $navigatie = [
@@ -14,6 +15,14 @@ else{
 
 
 }
+=======
+$navigatie = [
+  'index.php' => 'Home',
+   'registreer.php' => 'Registreer',
+    'addbar.php' => 'Add bar',
+    'addresto.php' => 'Add resto'
+];
+>>>>>>> origin/master
 foreach ($navigatie as $key => $value){
     $attr = '';
     if( $key == $current )
@@ -28,7 +37,7 @@ foreach ($navigatie as $key => $value){
 
 <nav>
     <div class="nav-wrapper">
-        <a href="#!" class="brand-logo center"><img src="#" alt="logo"></a>
+        
         <ul class="left hide-on-med-and-down">
             <?php echo $nav ?>
         </ul>
