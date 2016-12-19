@@ -1,14 +1,33 @@
 <?php
-
-
-
-
 require_once 'header.php';
 $current = 'registreer.php';
 require_once 'navigatie.php';
-?>
 
-<?php
+
+
+if(isset($_POST['registreer'])) {
+    require("connectie.php");
+    $naam = $_POST["naam"];
+    $email = $_POST["email"];
+    $wachtwoord = $_POST["wachtwoord"];
+    /*TODO password encrypt*/
+
+
+    try {
+        $stmt = $db->prepare("INSERT INTO gebruiker
+                          (naam, email, wachtwoord )
+                          VALUES (:naam,:email,:wachtwoord)");
+        $stmt->bindParam(":naam", $naam);
+        $stmt->bindParam(":email", $email);
+        $stmt->bindParam(":wachtwoord", $wachtwoord);
+        $stmt->execute();
+        $message = "Great succes";
+        $db = null;
+    } catch (PDOException $e) {
+        $message = $e . "Failed";
+    }
+
+}
 
 
 
@@ -34,10 +53,10 @@ require_once 'navigatie.php';
                     </div>
                     <div class="input-field col s6">
                         <i class="material-icons prefix">lock</i>
-                        <input name="psw" id="icon_psw" type="password" class="validate">
+                        <input name="wachtwoord" id="icon_psw" type="password" class="validate">
                         <label for="icon_psw">password</label>
                     </div>
-                    <div class=" col s6 file-field input-field">
+                   <!-- <div class=" col s6 file-field input-field">
                         <div class="btn">
                             <span>Profielfoto</span>
                             <input type="file" name="profielfoto" class="formcontrol" >
@@ -45,10 +64,9 @@ require_once 'navigatie.php';
                         <div class="file-path-wrapper">
                             <input class="file-path validate" type="text">
                         </div>
-
-                    </div>
+                    </div>-->
                     <div class="col s12" >
-                        <button id="registreer"class="btn waves-effect waves-light" type="submit" name="registreer">registreer
+                        <button id="registreer" class="btn waves-effect waves-light" type="submit" name="registreer">registreer
                             <i class="material-icons right">send</i>
                         </button>
 
@@ -56,6 +74,11 @@ require_once 'navigatie.php';
             </div>
         </form>
     </div>
+    <?php
+    if(!empty($message)){
+        echo "<p class='bg-success' >{$message}</p>";
+    }
+    ?>
 
 
 </main>

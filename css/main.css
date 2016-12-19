@@ -8,3 +8,8 @@ body {
 main {
     flex: 1 0 auto;
 }
+.bg-success{
+    padding:10px;
+    margin-top:20px;
+    clear:both;
+}

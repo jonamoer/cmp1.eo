@@ -1,8 +1,19 @@
 <?php
-$navigatie = [
-  'index.php' => 'Home',
-   'registreer.php' => 'Registreer',
-];
+session_start();
+if(isset($_SESSION['username'])){
+    $navigatie = [
+        'index.php' => 'Home',
+        'logout.php' => 'Uitlogen',
+    ];}
+else{
+    $navigatie = [
+        'index.php' => 'Home',
+        'login.php' => 'Login',
+        'registreer.php' => 'registreer',
+    ];
+
+
+}
 foreach ($navigatie as $key => $value){
     $attr = '';
     if( $key == $current )
