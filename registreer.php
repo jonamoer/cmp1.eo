@@ -21,7 +21,7 @@ if(isset($_POST['registreer'])) {
         $stmt->bindParam(":email", $email);
         $stmt->bindParam(":wachtwoord", $wachtwoord);
         $stmt->execute();
-        $message = "Great succes";
+        header("location: login.php");
         $db = null;
     } catch (PDOException $e) {
         $message = $e . "Failed";

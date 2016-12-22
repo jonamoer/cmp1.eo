@@ -1,10 +1,11 @@
 <?php
-<<<<<<< HEAD
+
 session_start();
 if(isset($_SESSION['username'])){
     $navigatie = [
         'index.php' => 'Home',
         'logout.php' => 'Uitlogen',
+        'new_bar.php' => "Nieuwe bar toevoegen"
     ];}
 else{
     $navigatie = [
@@ -12,17 +13,8 @@ else{
         'login.php' => 'Login',
         'registreer.php' => 'registreer',
     ];
-
-
 }
-=======
-$navigatie = [
-  'index.php' => 'Home',
-   'registreer.php' => 'Registreer',
-    'addbar.php' => 'Add bar',
-    'addresto.php' => 'Add resto'
-];
->>>>>>> origin/master
+
 foreach ($navigatie as $key => $value){
     $attr = '';
     if( $key == $current )

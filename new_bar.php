@@ -3,7 +3,7 @@
 
 require_once 'header.php';
 /*Veradneren + aanpassing navigatie.php*/
-$current = 'index.php';
+$current = 'new_bar.php';
 require_once 'navigatie.php'; ?>
 
 <main>

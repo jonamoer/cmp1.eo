@@ -6,25 +6,28 @@ $current = 'login.php';
 require_once 'navigatie.php';
 
 
-if (isset($_POST['login'])){
-    $username = $_POST["user"];
+if(isset($_POST['login'])){
+
+    $username = $_POST["gebruiker"];
     $password = $_POST["psw"];
-
-    if($username == "admin" && $password == "1234"){
-        $_SESSION['username'] = $username;
-        header("location: index.php");
-
-    }else{
-        echo "<div id=fout>" . "verkeerde login probeer het opnieuw" . "</div>";
+    try{
+        $stmt = $db->prepare("SELECT * FROM gebruiker WHERE (naam = :gebruiker AND wachtwoord = :psw)");
+        $stmt ->bindParam(":gebruiker", $username); //<-- Look at Param name binded
+        $stmt ->bindParam(":psw", $password);
+        $stmt ->execute();
+        }
+    catch (PDOException $e){
+        $message = $e . "Failed";
     }
-
-
-
-
-}else{
-    echo "<div id='fout'>" . "Je bent nog niet ingelogd" ."</div>";
+    $result=$stmt->fetch();
+    if($stmt->rowCount() == 1)
+    {
+        header("location index.php");
+        $_SESSION['username'] = $username;
+    }else{
+        echo "failed";
+    }
 }
-
 ?>
 
 <main>
@@ -36,7 +39,7 @@ if (isset($_POST['login'])){
 
                 <div class="input-field col s6">
                     <i class="material-icons prefix">face</i>
-                    <input name="user" id="icon_prefix" type="text" class="validate">
+                    <input name="gebruiker" id="icon_prefix" type="text" class="validate">
                     <label for="icon_prefix">Naam</label>
                 </div>
 
@@ -48,7 +51,7 @@ if (isset($_POST['login'])){
                 </div>
 
                 <div class="col s12" >
-                    <button id="registreer" class="btn waves-effect waves-light" type="submit" name="login">Login
+                    <button id="submit" class="btn waves-effect waves-light" type="submit" name="login">Login
                         <i class="material-icons right">send</i>
                     </button>
 
