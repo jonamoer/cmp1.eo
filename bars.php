@@ -46,6 +46,7 @@ if(isset($_GET["delete_id"])){
 
         <!--Bars-->
         <div class="col l4">
+            <h4>Bars</h4>
             <table class="highlight responsive-table bordered">
                 <thead>
                 <tr>
@@ -75,6 +76,7 @@ if(isset($_GET["delete_id"])){
 
         <!--start drinks-->
         <div class="col l8 ">
+            <h4>Drank</h4>
             <table class="highlight responsive-table bordered">
                 <thead>
                 <tr>

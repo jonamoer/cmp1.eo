@@ -25,7 +25,7 @@ if(isset($_POST['login'])){
         $results = $stmt->fetch();
         if($stmt->rowCount() == 1 ){
             $_SESSION['username'] = $username;
-            echo "<script>window.location = 'index.php'</script>";
+            echo "<script>window.location = 'dashboard.php'</script>";
         }else{
             $errMsg = "Gebruiker en/of wachtwoord niet gevonden";
         }

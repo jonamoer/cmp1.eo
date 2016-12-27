@@ -4,7 +4,7 @@ if(isset($_SESSION['username'])){
     $navigatie = [
         'index.php' => 'Home',
         'logout.php' => 'Uitlogen',
-        'new_bar.php' => "Nieuwe bar toevoegen",
+        'addbar.php' => "Nieuwe bar toevoegen",
         'bars.php' => "Check bars",
     ];}
 else{
@@ -28,9 +28,9 @@ foreach ($navigatie as $key => $value){
 
 
 <nav>
-    <div class="nav-wrapper">
+    <div class="nav-wrapper light-blue darken-1">
         
-        <ul class="left hide-on-med-and-down">
+        <ul >
             <?php echo $nav ?>
         </ul>
     </div>
