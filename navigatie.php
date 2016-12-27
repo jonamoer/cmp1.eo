@@ -3,7 +3,6 @@ $nav ="";
 if(isset($_SESSION['username'])){
     $navigatie = [
         'index.php' => 'Home',
-        'logout.php' => 'Uitlogen',
         'addbar.php' => "Nieuwe bar toevoegen",
         'bars.php' => "Check bars",
     ];}
@@ -32,6 +31,9 @@ foreach ($navigatie as $key => $value){
         
         <ul >
             <?php echo $nav ?>
+        </ul>
+        <ul class="right-align">
+            <li><a class="right-align red darken-4" href="logout.php">Logout</a></li>
         </ul>
     </div>
 </nav>

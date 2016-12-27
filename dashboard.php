@@ -10,7 +10,8 @@ require_once 'navigatie.php'; ?>
 <div class="container">
     <div class="row">
 
-        <h1 class="center-align"><?php echo "Welkom, " . $_SESSION["username"];?></h1>
+        <h1 class="center-align"><?php echo "Welkom, " . $_SESSION["username"];?>
+
     </div>
 </div>
 

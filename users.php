@@ -48,7 +48,7 @@ if(isset($_GET["delete_id"])){
 
             <!--Bars-->
             <div class="col s12">
-                <h4>Bars</h4>
+                <h4>Gebruikers</h4>
                 <table class="highlight responsive-table bordered">
                     <thead>
                     <tr>
@@ -68,7 +68,10 @@ if(isset($_GET["delete_id"])){
                         echo "<td>{$row['id']}</td>";
                         echo "<td>{$row['username']}</td>";
                         echo "<td>{$row['email']}</td>";
-                        echo "<td>{$row['profilepic']}</td>";
+                        echo "<td><img class='profilepic' 
+                                src='uploads/{$row['profilepic']}'
+                                 alt='Alternatief profiel foto'>
+                        </td>";
                         echo "<td><a href='users.php?delete_id={$row['id']}'><i class='material-icons'>delete</i></a></td>";
                         echo "</tr>";
                     }
