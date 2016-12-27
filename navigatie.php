@@ -1,17 +1,17 @@
 <?php
-
-session_start();
+$nav ="";
 if(isset($_SESSION['username'])){
     $navigatie = [
         'index.php' => 'Home',
         'logout.php' => 'Uitlogen',
-        'new_bar.php' => "Nieuwe bar toevoegen"
+        'new_bar.php' => "Nieuwe bar toevoegen",
+        'bars.php' => "Check bars",
     ];}
 else{
     $navigatie = [
         'index.php' => 'Home',
         'login.php' => 'Login',
-        'registreer.php' => 'registreer',
+        'registreer.php' => 'Registreer',
     ];
 }
 

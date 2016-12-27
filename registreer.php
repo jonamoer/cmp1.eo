@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once 'header.php';
 $current = 'registreer.php';
 require_once 'navigatie.php';
@@ -15,13 +16,13 @@ if(isset($_POST['registreer'])) {
 
     try {
         $stmt = $db->prepare("INSERT INTO gebruiker
-                          (naam, email, wachtwoord )
+                          (username, email, password )
                           VALUES (:naam,:email,:wachtwoord)");
         $stmt->bindParam(":naam", $naam);
         $stmt->bindParam(":email", $email);
         $stmt->bindParam(":wachtwoord", $wachtwoord);
         $stmt->execute();
-        header("location: login.php");
+        header("location: index.php");
         $db = null;
     } catch (PDOException $e) {
         $message = $e . "Failed";
