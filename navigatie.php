@@ -32,10 +32,7 @@ foreach ($navigatie as $key => $value){
 
 <nav>
     <div class="nav-wrapper light-blue darken-1">
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/master
         <ul >
             <?php echo $nav ?>
         </ul>
