@@ -27,13 +27,15 @@ foreach ($navigatie as $key => $value){
     }
     $nav .= '<li' . $attr . '><a href=" '. $key . '">' . $value . '</a></li>';
 }
-
 ?>
 
 
 <nav>
     <div class="nav-wrapper light-blue darken-1">
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
         <ul >
             <?php echo $nav ?>
         </ul>

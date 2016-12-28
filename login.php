@@ -16,6 +16,7 @@ if(isset($_POST['login'])){
 
     if($password == '')
         $errMsg = "Geen wachtwoord";
+
     if ($errMsg == ''){
 
         $stmt = $db->prepare("SELECT id,username,password FROM gebruiker WHERE username =:username AND password =:password");
