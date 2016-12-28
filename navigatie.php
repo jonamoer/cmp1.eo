@@ -1,5 +1,4 @@
 <?php
-require_once "functions/get_user_info.php";
 $nav ="";
 if(isset($_SESSION['username'])){
     $navigatie = [
@@ -31,8 +30,6 @@ foreach ($navigatie as $key => $value){
 
 <nav>
     <div class="nav-wrapper light-blue darken-1">
-
-        
         <ul >
             <?php echo $nav ?>
         </ul>
