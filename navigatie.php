@@ -6,7 +6,11 @@ if(isset($_SESSION['username'])){
         'addbar.php' => "Add Bar",
         'addbooze.php' => "Add Booze",
         'bars.php' => "Check bars",
+<<<<<<< HEAD
 
+=======
+        'users.php' => "gebruikers",
+>>>>>>> origin/master
     ];}
 else{
     $navigatie = [
