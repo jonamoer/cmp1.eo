@@ -8,7 +8,7 @@ require_once 'navigatie.php';
 
 function getAllBars(){
     //database
-    require_once 'connectie.php';
+    require 'connectie.php';
     try{
         $stmt = $db->prepare("SELECT naam FROM bar order by RAND() LIMIT 1");
         $stmt -> execute();
@@ -24,7 +24,7 @@ function getAllBars(){
 
 function getAllBooze(){
     //database
-    require_once 'connectie.php';
+    require 'connectie.php';
     try{
         $stmt2 = $db->prepare("SELECT drank FROM drank order by RAND() LIMIT 1");
         $stmt2 -> execute();
