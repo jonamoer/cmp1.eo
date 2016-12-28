@@ -9,11 +9,15 @@ if(isset($_POST['login'])){
     require_once "connectie.php";
     $username = $_POST["username"];
     $password = $_POST["password"];
+
     if($username == '')
         $errMsg = "geen gebruiker gedefineerd";
+
     if($password == '')
         $errMsg = "Geen wachtwoord";
+
     if ($errMsg == ''){
+
         $stmt = $db->prepare("SELECT id,username,password FROM gebruiker WHERE username =:username AND password =:password");
         $stmt ->bindParam(':username',$username);
         $stmt ->bindParam(':password', $password);
