@@ -7,48 +7,57 @@ require_once 'header.php';?>
 <!------------------navigatie----------------------------->
 
 <?php
-$current = 'addresto.php';
-require_once 'navigatie.php'; ?>
+$current = 'addresto';
+require_once 'navigatie.php';
+
+if(isset($_POST['newResto'])){
+    require("connectie.php");
+
+    $naam = $_POST["naam"];
+    $adres = $_POST["adres"];
+
+    try{
+        $stmt = $db->prepare("INSERT INTO resto (naam, adres) VALUES (:naam, :adres)");
+
+        $stmt->bindParam(":naam", $naam);
+        $stmt->bindParam(":adres", $adres);
+
+        $stmt->execute();
+        $message = "SUCCES";
+        //CONNECTIE SLUITEN
+        $db = null;
+
+    }catch(PDOExeption $e)
+    {
+        $message = $e;
+    }
+}
+
+
+
+?>
 
 <main>
     <div class="row">
-        <form class="col s6">
+        <form class="col s12" method="POST" action="addresto.php">
             <div class="row">
-                <h3>RESTO</h3>
+                <h3>Resto</h3>
                 <div class="input-field col s6">
-                    <input id="last_name" type="text" class="validate">
-                    <label for="last_name">Naam</label>
+                    <input name="naam" id="naam" type="text" class="validate">
+                    <label for="naam">Naam</label>
                 </div>
                 <div class="input-field col s6">
-                    <input id="last_name" type="text" class="validate">
-                    <label for="last_name">Adres</label>
+                    <input name="adres" id="adres" type="text" class="validate">
+                    <label for="adres">Adres</label>
+                </div>
+                <div class="col s12" >
+                    <button id="newResto" class="btn waves-effect waves-light" type="submit" name="newResto">Add resto
+                        <i class="material-icons right">send</i>
+                    </button>
                 </div>
             </div>
         </form>
-
-        <form class="col s6">
-            <div class="row">
-                <h3>ETEN</h3>
-                <div class="input-field col s12">
-                    <select>
-                        <option value="">Kies uw eten</option>
-                        <option value="1">Spaghetti</option>
-                        <option value="2">Stoofvlees</option>
-                        <option value="3">Frieten</option>
-                        <option value="4">Salade</option>
-                        <option value="5">Pizza</option>
-                        <option value="6">Balletjes in tomatensaus</option>
-                    </select>
-                </div>
-            </div>
-        </form>
-
-        <div class="col s12" >
-            <button id="registreer"class="btn waves-effect waves-light" type="submit" name="registreer">Add resto
-                <i class="material-icons right">send</i>
-            </button>
-
-        </div>
+    </div>
 </main>
 
 <?php require_once 'footer.php'; ?>

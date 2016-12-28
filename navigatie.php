@@ -5,6 +5,8 @@ if(isset($_SESSION['username'])){
         'index.php' => 'Home',
         'addbar.php' => "Add Bar",
         'addbooze.php' => "Add Booze",
+        'addresto.php' => 'Add Resto',
+        'addfood.php' => 'Add Food',
         'bars.php' => "Check bars",
         'users.php' => "gebruikers",
 
@@ -31,7 +33,7 @@ foreach ($navigatie as $key => $value){
 
 <nav>
     <div class="nav-wrapper light-blue darken-1">
-        
+
         <ul >
             <?php echo $nav ?>
         </ul>

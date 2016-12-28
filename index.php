@@ -47,7 +47,7 @@ function getAllBooze(){
 
             <!--Bars-->
             <div class="col l10">
-                <h3>Rondimze</h3>
+                <h3>Randomize</h3>
 
 
                 <?php
