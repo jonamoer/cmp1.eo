@@ -5,6 +5,7 @@ if(isset($_SESSION['username'])){
         'index.php' => 'Home',
         'addbar.php' => "Nieuwe bar toevoegen",
         'bars.php' => "Check bars",
+        'users.php' => "gebruikers",
     ];}
 else{
     $navigatie = [
