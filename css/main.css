@@ -17,3 +17,8 @@ main {
 .profilepic{
     width: 50px;
 }
+.nav_pic{
+    margin-top: 3px;
+    margin-right: 3px;
+    width: 30px;
+}
