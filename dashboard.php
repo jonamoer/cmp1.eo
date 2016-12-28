@@ -14,9 +14,10 @@ function getImage()
         $stmt ->bindParam("username",$user);
         $stmt->execute();
         $results = $stmt->fetchAll();
-        return $results;
+            return $results;
+    }
 
-    } catch (PDOException $e) {
+    catch (PDOException $e) {
         $message = $e;
     }
 }
@@ -24,23 +25,21 @@ function getImage()
 
 <main>
 <div class="container">
+    <?php echo $message;?>
     <div class="row">
 
         <h1 class="center-align"><?php echo "Welkom, " . $_SESSION["username"];?></h1>
             <?php
                 $results = getImage();
                 foreach ($results as $row){
-                echo "<p>{$row['email']}</p>";
-                }
-
-
-                ?>
+                    echo "<img class='' 
+                                src='uploads/{$row['profilepic']}'
+                                 alt='Alternatief profiel foto'>
+                        ";
+                } ?>
 
 
     </div>
 </div>
-
-
-
 </main>
 <?php require_once 'footer.php'; ?>
