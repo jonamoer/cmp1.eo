@@ -5,7 +5,22 @@ require_once 'header.php';
 /*Veradneren + aanpassing navigatie.php*/
 $current = 'dashboard.php';
 require_once 'navigatie.php';
-require_once 'functions/get_user_info.php';
+function getImage()
+{
+    require "connectie.php";
+    $user = $_SESSION["username"];
+    try {
+        $stmt = $db->prepare("SELECT * FROM gebruiker WHERE username = $user");
+        $stmt ->bindParam("username",$user);
+        $stmt->execute();
+        $results = $stmt->fetchAll();
+            return $results;
+    }
+
+    catch (PDOException $e) {
+        $message = $e;
+    }
+}
 ?>
 
 <main>
@@ -15,10 +30,9 @@ require_once 'functions/get_user_info.php';
 
         <h1 class="center-align"><?php echo "Welkom, " . $_SESSION["username"];?></h1>
             <?php
-                $results = getUserInfo();
+                $results = getImage();
                 foreach ($results as $row){
-                    echo "<p>{$row['email']}</p>";
-                    echo "<img class='profilepic' 
+                    echo "<img class='' 
                                 src='uploads/{$row['profilepic']}'
                                  alt='Alternatief profiel foto'>
                         ";

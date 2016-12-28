@@ -25,20 +25,12 @@ foreach ($navigatie as $key => $value){
     }
     $nav .= '<li' . $attr . '><a href=" '. $key . '">' . $value . '</a></li>';
 }
-require_once "functions/get_user_info.php";
+
 ?>
 
 
 <nav>
     <div class="nav-wrapper light-blue darken-1">
-        <a href="dashboard.php" class="brand-logo right"><?php
-                                                            $results = getUserInfo();
-                                                            foreach ($results as $row){
-                                                            echo "<img class='nav_pic' 
-                                                            src='uploads/{$row['profilepic']}'
-                                                             alt='profiel foto ga naar dashboard'>
-                        ";
-            } ?></a>
         
         <ul >
             <?php echo $nav ?>

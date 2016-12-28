@@ -40,7 +40,7 @@ if(isset($_POST['newDrank'])){
 <div class="row">
     <form class="col s12" method="POST" action="addbooze.php">
         <div class="row">
-            <h3>drank</h3>
+            <h3>Drank</h3>
             <div class="input-field col s6">
                 <input name="drank" id="drank" type="text" class="validate">
                 <label for="naam">drank</label>
