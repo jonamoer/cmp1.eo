@@ -3,8 +3,10 @@ $nav ="";
 if(isset($_SESSION['username'])){
     $navigatie = [
         'index.php' => 'Home',
-        'addbar.php' => "Nieuwe bar toevoegen",
+        'addbar.php' => "Add Bar",
+        'addbooze.php' => "Add Booze",
         'bars.php' => "Check bars",
+
     ];}
 else{
     $navigatie = [
