@@ -13,3 +13,8 @@ require_once 'navigatie.php'; ?>
 
 </main>
 <?php require_once 'footer.php'; ?>
+
+
+
+
+<i class='material-icons prefix'>face</i> {$_SESSION['username']}
