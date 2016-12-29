@@ -32,6 +32,13 @@ foreach ($navigatie as $key => $value){
 
 <nav>
     <div class="nav-wrapper light-blue darken-1">
+      <!--  --><?php
+/*        if(isset($_SESSION['username'])){}
+        else{
+            echo "plzzzz login"
+        }
+
+        */?>
 
         <ul >
             <?php echo $nav ?>

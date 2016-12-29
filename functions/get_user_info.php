@@ -1,7 +1,7 @@
 <?php
 function getUserInfo()
 {
-    require_once "connectie.php";
+    require "connectie.php";
     try {
         $stmt = $db->prepare("SELECT * FROM gebruiker WHERE username = '".$_SESSION['username']."'");
         $stmt->execute();

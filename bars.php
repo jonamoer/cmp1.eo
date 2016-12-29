@@ -8,7 +8,7 @@ $current = 'bars.php';
 require_once 'navigatie.php';
 function getAllBars(){
     //database
-    require_once 'connectie.php';
+    require 'connectie.php';
     try{
         $stmt = $db->prepare("SELECT * FROM bar");
         $stmt -> execute();
@@ -21,6 +21,8 @@ function getAllBars(){
         $message = $e;
     }
 }
+
+
 
 
 if(isset($_GET["delete_id"])){
