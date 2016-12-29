@@ -10,7 +10,6 @@ require_once "functions/get_user_info.php";
 
 <main>
 <div class="container">
-    <?php echo $message;?>
     <div class="row">
         <?php
         $results = getUserInfo();

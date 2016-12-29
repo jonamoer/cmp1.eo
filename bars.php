@@ -21,6 +21,8 @@ function getAllBars(){
         $message = $e;
     }
 }
+
+
 if(isset($_GET["delete_id"])){
     require("connectie.php");
     $id = $_GET["delete_id"];

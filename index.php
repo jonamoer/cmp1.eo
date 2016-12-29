@@ -77,7 +77,7 @@ function getAllFood(){
         <div class="row">
 
             <!--Bars-->
-            <div class="col l10">
+            <div class="col l12">
                 <h3>Randomize</h3>
 
 
