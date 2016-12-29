@@ -85,7 +85,7 @@ if(isset($_GET["delete_bars"])){
 
                 <div class="col s12" >
                     <button id="newBar"class="btn waves-effect waves-light" type="submit" name="newBar">Add bar
-                        <i class="material-icons right">send</i>
+                        <i class="material-icons right">add</i>
                     </button>
                 </div>
             </form>

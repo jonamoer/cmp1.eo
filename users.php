@@ -8,7 +8,7 @@ require_once 'navigatie.php';
 
 function getAllUsers(){
     //database
-    require_once 'connectie.php';
+    require 'connectie.php';
     try{
         $stmt = $db->prepare("SELECT * FROM gebruiker");
         $stmt -> execute();
