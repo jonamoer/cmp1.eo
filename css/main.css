@@ -31,6 +31,6 @@ h4 {
 
 .highlighted {
     display: inline;
-    color: red;
+    color: yellow;
     text-transform: uppercase;
 }
