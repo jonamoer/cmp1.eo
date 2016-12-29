@@ -24,12 +24,20 @@ function getAllBars(){
 }
 
 
+<<<<<<< HEAD
+
+
+if(isset($_GET["delete_id"])){
+    require("connectie.php");
+    $id = $_GET["delete_id"];
+=======
 function getAllDrank(){
     //database
     require 'connectie.php';
     try{
         $stmt = $db->prepare("SELECT * FROM drank");
         $stmt -> execute();
+>>>>>>> origin/master
 
         $results = $stmt->fetchAll();
         return $results;
