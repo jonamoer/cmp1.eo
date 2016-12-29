@@ -37,7 +37,7 @@ if(isset($_POST['newDrank'])){
 ?>
 
 <main>
-<div class="row">
+<div class="container">
     <form class="col s12" method="POST" action="addbooze.php">
         <div class="row">
             <h3>Drank</h3>

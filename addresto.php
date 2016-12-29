@@ -38,7 +38,7 @@ if(isset($_POST['newResto'])){
 ?>
 
 <main>
-    <div class="row">
+    <div class="container">
         <form class="col s12" method="POST" action="addresto.php">
             <div class="row">
                 <h3>Resto</h3>

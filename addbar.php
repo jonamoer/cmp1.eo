@@ -38,7 +38,7 @@ if(isset($_POST['newBar'])){
 ?>
 
 <main>
-    <div class="row">
+    <div class="container">
         <form class="col s12" method="POST" action="addbar.php">
             <div class="row">
                 <h3>BAR</h3>

@@ -26,11 +26,11 @@ function getAllBooze(){
     //database
     require 'connectie.php';
     try{
-        $stmt2 = $db->prepare("SELECT drank FROM drank order by RAND() LIMIT 1");
-        $stmt2 -> execute();
+        $stmt = $db->prepare("SELECT drank FROM drank order by RAND() LIMIT 1");
+        $stmt -> execute();
 
-        $results2 = $stmt2->fetchAll();
-        return $results2;
+        $results = $stmt->fetchAll();
+        return $results;
 
     }
     catch (PDOException $e){
@@ -38,6 +38,37 @@ function getAllBooze(){
     }
 }
 
+function getAllResto(){
+    //database
+    require 'connectie.php';
+    try{
+        $stmt = $db->prepare("SELECT naam FROM resto order by RAND() LIMIT 1");
+        $stmt -> execute();
+
+        $results = $stmt->fetchAll();
+        return $results;
+
+    }
+    catch (PDOException $e){
+        $message = $e;
+    }
+}
+
+function getAllFood(){
+    //database
+    require 'connectie.php';
+    try{
+        $stmt = $db->prepare("SELECT eten FROM eten order by RAND() LIMIT 1");
+        $stmt -> execute();
+
+        $results = $stmt->fetchAll();
+        return $results;
+
+    }
+    catch (PDOException $e){
+        $message = $e;
+    }
+}
 ?>
 
 
@@ -51,21 +82,40 @@ function getAllBooze(){
 
 
                 <?php
-                $results = getAllBars();
+                $results = getAllResto();
                 foreach ($results as $row){
 
                     echo "<h4>Vanavond gaan we naar {$row['naam']}</h4>";
                 }
 
-                $results2 = getAllBooze();
-                foreach ($results2 as $row){
+                $results = getAllFood();
+                foreach ($results as $row){
+
+                    echo "<h4>We eten {$row['eten']}</h4>";
+                }
+
+                $results = getAllBars();
+                foreach ($results as $row){
+
+                    echo "<h4>Daarna gaan we naar {$row['naam']}</h4>";
+                }
+
+                $results = getAllBooze();
+                foreach ($results as $row){
 
                     echo "<h4>en we drinken de hele avond {$row['drank']}</h4>";
                 }
+
+
                 ?>
 
+            </div>
 
-
+            <div class="col s12" >
+                <a href="javascript:history.go(0)"><button class="btn waves-effect waves-light" type="submit" >
+                    Randomize again
+                    <i class="material-icons right">refresh</i>
+                </button></a>
             </div>
 
 

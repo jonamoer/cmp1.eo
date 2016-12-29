@@ -37,7 +37,7 @@ if(isset($_POST['newFood'])){
 ?>
 
 <main>
-    <div class="row">
+    <div class="container">
         <form class="col s12" method="POST" action="addfood.php">
             <div class="row">
                 <h3>Food</h3>
