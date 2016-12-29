@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b90b492-a82c-41dd-84f1-f419c5291501" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bars.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/checkBooze.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bars.php" afterPath="$PROJECT_DIR$/bars.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions/get_user_info.php" afterPath="$PROJECT_DIR$/functions/get_user_info.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/navigatie.php" afterPath="$PROJECT_DIR$/navigatie.php" />
     </list>
     <ignored path="cmp1.eo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,9 +32,9 @@
             <state vertical-scroll-proportion="-34.625">
               <caret line="115" column="14" selection-start-line="90" selection-start-column="8" selection-end-line="115" selection-end-column="14" />
               <folding>
-                <marker date="1483019704000" expanded="true" signature="340:394" placeholder="INSERT INTO resto... " />
-                <marker date="1483019704000" expanded="true" signature="762:781" placeholder="SELECT * FRO... resto" />
-                <marker date="1483019704000" expanded="true" signature="1123:1153" placeholder="DELETE FROM " />
+                <marker date="1483019781000" expanded="true" signature="340:394" placeholder="INSERT INTO resto... " />
+                <marker date="1483019781000" expanded="true" signature="762:781" placeholder="SELECT * FRO... resto" />
+                <marker date="1483019781000" expanded="true" signature="1123:1153" placeholder="DELETE FROM " />
               </folding>
             </state>
           </provider>
@@ -44,27 +43,27 @@
       <file leaf-file-name="addbooze.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addbooze.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.041666">
+            <state vertical-scroll-proportion="-48.125">
               <caret line="77" column="42" selection-start-line="77" selection-start-column="42" selection-end-line="77" selection-end-column="42" />
               <folding>
-                <marker date="1483019704000" expanded="true" signature="312:353" placeholder="INSERT INTO drank... " />
-                <marker date="1483019704000" expanded="true" signature="680:699" placeholder="SELECT * FRO... drank" />
-                <marker date="1483019704000" expanded="true" signature="1041:1071" placeholder="DELETE FROM " />
+                <marker date="1483019781000" expanded="true" signature="312:353" placeholder="INSERT INTO drank... " />
+                <marker date="1483019781000" expanded="true" signature="680:699" placeholder="SELECT * FRO... drank" />
+                <marker date="1483019781000" expanded="true" signature="1041:1071" placeholder="DELETE FROM " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navigatie.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="navigatie.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/navigatie.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9082569">
-              <caret line="68" column="6" selection-start-line="68" selection-start-column="6" selection-end-line="68" selection-end-column="6" />
+            <state vertical-scroll-proportion="-22.5">
+              <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
               <folding>
-                <marker date="1483019761000" expanded="true" signature="1437:1453" placeholder="..." />
-                <marker date="1483019761000" expanded="true" signature="1437:1597" placeholder="..." />
-                <marker date="1483019761000" expanded="true" signature="1437:1604" placeholder="..." />
-                <marker date="1483019761000" expanded="true" signature="1486:1586" placeholder="..." />
+                <marker date="1483019800000" expanded="true" signature="1437:1453" placeholder="..." />
+                <marker date="1483019800000" expanded="true" signature="1437:1597" placeholder="..." />
+                <marker date="1483019800000" expanded="true" signature="1437:1604" placeholder="..." />
+                <marker date="1483019800000" expanded="true" signature="1486:1586" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -76,36 +75,24 @@
             <state vertical-scroll-proportion="-8.375">
               <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
               <folding>
-                <marker date="1483019704000" expanded="true" signature="308:346" placeholder="INSERT INTO eten... " />
-                <marker date="1483019704000" expanded="true" signature="670:688" placeholder="SELECT * FRO... eten" />
-                <marker date="1483019704000" expanded="true" signature="1028:1057" placeholder="DELETE FROM " />
+                <marker date="1483019781000" expanded="true" signature="308:346" placeholder="INSERT INTO eten... " />
+                <marker date="1483019781000" expanded="true" signature="670:688" placeholder="SELECT * FRO... eten" />
+                <marker date="1483019781000" expanded="true" signature="1028:1057" placeholder="DELETE FROM " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-37.5">
+            <state vertical-scroll-proportion="0.9174312">
               <caret line="60" column="41" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
               <folding>
                 <marker date="1483018061000" expanded="true" signature="254:298" placeholder="SELECT naam bar" />
                 <marker date="1483018061000" expanded="true" signature="569:616" placeholder="SELECT drank... drank" />
                 <marker date="1483018061000" expanded="true" signature="887:933" placeholder="SELECT naam resto" />
                 <marker date="1483018061000" expanded="true" signature="1203:1248" placeholder="SELECT eten eten" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="checkBooze.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/checkBooze.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1482935991000" expanded="true" signature="259:278" placeholder="SELECT * FRO... drank" />
               </folding>
             </state>
           </provider>
@@ -259,9 +246,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -345,37 +332,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/checkBooze.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1482935991000" expanded="true" signature="259:278" placeholder="SELECT * FRO... drank" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addbar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.25076452">
           <caret line="65" column="1" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
           <folding>
-            <marker date="1483019704000" expanded="true" signature="336:388" placeholder="INSERT INTO bar... " />
-            <marker date="1483019704000" expanded="true" signature="755:772" placeholder="SELECT * FRO... bar" />
-            <marker date="1483019704000" expanded="true" signature="1112:1140" placeholder="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-37.5">
-          <caret line="60" column="41" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
-          <folding>
-            <marker date="1483018061000" expanded="true" signature="254:298" placeholder="SELECT naam bar" />
-            <marker date="1483018061000" expanded="true" signature="569:616" placeholder="SELECT drank... drank" />
-            <marker date="1483018061000" expanded="true" signature="887:933" placeholder="SELECT naam resto" />
-            <marker date="1483018061000" expanded="true" signature="1203:1248" placeholder="SELECT eten eten" />
+            <marker date="1483019781000" expanded="true" signature="336:388" placeholder="INSERT INTO bar... " />
+            <marker date="1483019781000" expanded="true" signature="755:772" placeholder="SELECT * FRO... bar" />
+            <marker date="1483019781000" expanded="true" signature="1112:1140" placeholder="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -385,34 +349,34 @@
         <state vertical-scroll-proportion="-34.625">
           <caret line="115" column="14" selection-start-line="90" selection-start-column="8" selection-end-line="115" selection-end-column="14" />
           <folding>
-            <marker date="1483019704000" expanded="true" signature="340:394" placeholder="INSERT INTO resto... " />
-            <marker date="1483019704000" expanded="true" signature="762:781" placeholder="SELECT * FRO... resto" />
-            <marker date="1483019704000" expanded="true" signature="1123:1153" placeholder="DELETE FROM " />
+            <marker date="1483019781000" expanded="true" signature="340:394" placeholder="INSERT INTO resto... " />
+            <marker date="1483019781000" expanded="true" signature="762:781" placeholder="SELECT * FRO... resto" />
+            <marker date="1483019781000" expanded="true" signature="1123:1153" placeholder="DELETE FROM " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/addbooze.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.041666">
+        <state vertical-scroll-proportion="-48.125">
           <caret line="77" column="42" selection-start-line="77" selection-start-column="42" selection-end-line="77" selection-end-column="42" />
           <folding>
-            <marker date="1483019704000" expanded="true" signature="312:353" placeholder="INSERT INTO drank... " />
-            <marker date="1483019704000" expanded="true" signature="680:699" placeholder="SELECT * FRO... drank" />
-            <marker date="1483019704000" expanded="true" signature="1041:1071" placeholder="DELETE FROM " />
+            <marker date="1483019781000" expanded="true" signature="312:353" placeholder="INSERT INTO drank... " />
+            <marker date="1483019781000" expanded="true" signature="680:699" placeholder="SELECT * FRO... drank" />
+            <marker date="1483019781000" expanded="true" signature="1041:1071" placeholder="DELETE FROM " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bars.php">
+    <entry file="file://$PROJECT_DIR$/navigatie.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="56" selection-end-column="1" />
+        <state vertical-scroll-proportion="-22.5">
+          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
           <folding>
-            <marker date="1483019704000" expanded="true" signature="254:271" placeholder="SELECT * FRO... bar" />
-            <marker date="1483019704000" expanded="true" signature="543:562" placeholder="SELECT * FRO... drank" />
-            <marker date="1483019704000" expanded="true" signature="1038:1066" placeholder="DELETE FROM " />
-            <marker date="1483019704000" expanded="true" signature="1416:1446" placeholder="DELETE FROM " />
+            <marker date="1483019800000" expanded="true" signature="1437:1453" placeholder="..." />
+            <marker date="1483019800000" expanded="true" signature="1437:1597" placeholder="..." />
+            <marker date="1483019800000" expanded="true" signature="1437:1604" placeholder="..." />
+            <marker date="1483019800000" expanded="true" signature="1486:1586" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -422,22 +386,22 @@
         <state vertical-scroll-proportion="-8.375">
           <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding>
-            <marker date="1483019704000" expanded="true" signature="308:346" placeholder="INSERT INTO eten... " />
-            <marker date="1483019704000" expanded="true" signature="670:688" placeholder="SELECT * FRO... eten" />
-            <marker date="1483019704000" expanded="true" signature="1028:1057" placeholder="DELETE FROM " />
+            <marker date="1483019781000" expanded="true" signature="308:346" placeholder="INSERT INTO eten... " />
+            <marker date="1483019781000" expanded="true" signature="670:688" placeholder="SELECT * FRO... eten" />
+            <marker date="1483019781000" expanded="true" signature="1028:1057" placeholder="DELETE FROM " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/navigatie.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9082569">
-          <caret line="68" column="6" selection-start-line="68" selection-start-column="6" selection-end-line="68" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.9174312">
+          <caret line="60" column="41" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
           <folding>
-            <marker date="1483019761000" expanded="true" signature="1437:1453" placeholder="..." />
-            <marker date="1483019761000" expanded="true" signature="1437:1597" placeholder="..." />
-            <marker date="1483019761000" expanded="true" signature="1437:1604" placeholder="..." />
-            <marker date="1483019761000" expanded="true" signature="1486:1586" placeholder="..." />
+            <marker date="1483018061000" expanded="true" signature="254:298" placeholder="SELECT naam bar" />
+            <marker date="1483018061000" expanded="true" signature="569:616" placeholder="SELECT drank... drank" />
+            <marker date="1483018061000" expanded="true" signature="887:933" placeholder="SELECT naam resto" />
+            <marker date="1483018061000" expanded="true" signature="1203:1248" placeholder="SELECT eten eten" />
           </folding>
         </state>
       </provider>
