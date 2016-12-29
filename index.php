@@ -103,7 +103,7 @@ function getAllFood(){
                 $results = getAllBooze();
                 foreach ($results as $row){
 
-                    echo "<h4>en we drinken de hele avond {$row['drank']}</h4>";
+                    echo "<h4>en we drinken de hele avond " . "{$row['drank']}" . "</h4>";
                 }
 
 
