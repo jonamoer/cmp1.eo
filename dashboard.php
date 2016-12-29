@@ -12,40 +12,18 @@ require_once "functions/get_user_info.php";
 <div class="container">
     <?php echo $message;?>
     <div class="row">
-
-        <h1 class="center-align"><?php echo "Welkom, " . $_SESSION["username"];?></h1>
-    <div class="col s12">
-        <h4>Uw gegevens</h4>
-        <table class="highlight responsive-table bordered">
-            <thead>
-            <tr>
-                <th data-field="name">ID</th>
-                <th data-field="naam">Naam</th>
-                <th data-field="email">Email</th>
-                <th data-field="email">Profielfoto</th>
-                <th data-fiels="delete">Delete</th>
-            </tr>
-            </thead>
-
-            <tbody>
-            <?php
-            $results = getUserInfo();
-            foreach ($results as $row){
-                echo "<tr>";
-                echo "<td>{$row['id']}</td>";
-                echo "<td>{$row['username']}</td>";
-                echo "<td>{$row['email']}</td>";
-                echo "<td><img class='profilepic' 
-                                src='uploads/{$row['profilepic']}'
-                                 alt='Alternatief profiel foto'>
-                        </td>";
-                echo "<td><a href='users.php?delete_id={$row['id']}'><i class='material-icons'>delete</i></a></td>";
-                echo "</tr>";
-            }
-            ?>
-            </tbody>
-        </table>
-    </div>
+        <?php
+        $results = getUserInfo();
+        foreach ($results as $row) {
+            echo "<div class='col s12'><h1>Welkom, {$row["username"]}</h1></div>";
+            echo "<div class='col s4'><img src='uploads/{$row["profilepic"]}'></div>";
+            echo "<div class='col s8'>";
+            echo "<h2>Gegevens:</h2>";
+            echo "<div><h5>Naam: {$row["username"]}</h5></div>";
+            echo "<div><h5>E-mail: {$row["email"]}</h5></div>";
+            echo "<a class='btn waves-effect waves-light' href='edit_user.php?edite_id={$row['id']}'><i class='material-icons right'>edite</i>Edite</a>";
+            echo "</div>";
+        }?>
 </div>
 </div>
 </main>

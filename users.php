@@ -72,7 +72,7 @@ if(isset($_GET["delete_id"])){
                                  alt='Alternatief profiel foto'>
                         </td>";
                         echo "</tr>";
-                    }
+                                           }
                     ?>
                     </tbody>
                 </table>
