@@ -57,7 +57,7 @@ if(isset($_GET["delete_drank"])){
         $stmt = $db->prepare("DELETE FROM drank WHERE id=:id");
         $stmt->bindParam(":id", $id);
         $stmt->execute();
-        header("location: bars.php");
+        header("location: addbooze.php");
     }
     catch(PDOException $e){
         $message = $e;
@@ -76,7 +76,7 @@ if(isset($_GET["delete_drank"])){
                 </div>
                 <div class="col s12" >
                     <button id="newDrank" class="btn waves-effect waves-light" type="submit" name="newDrank">Add Booze
-                        <i class="material-icons right">send</i>
+                        <i class="material-icons right">add</i>
                     </button>
                 </div>
             </form>

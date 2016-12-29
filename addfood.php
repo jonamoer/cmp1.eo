@@ -78,7 +78,7 @@ if(isset($_GET["delete_eten"])){
                 </div>
                 <div class="col s12" >
                     <button id="newFood" class="btn waves-effect waves-light" type="submit" name="newFood">Add Food
-                        <i class="material-icons right">send</i>
+                        <i class="material-icons right">add</i>
                     </button>
                 </div>
             </form>

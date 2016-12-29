@@ -82,7 +82,7 @@ if(isset($_GET["delete_resto"])){
                 </div>
                 <div class="col s12" >
                     <button id="newResto" class="btn waves-effect waves-light" type="submit" name="newResto">Add resto
-                        <i class="material-icons right">send</i>
+                        <i class="material-icons right">add</i>
                     </button>
                 </div>
             </form>

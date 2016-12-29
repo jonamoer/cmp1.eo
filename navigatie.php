@@ -1,9 +1,14 @@
 <?php
+require "functions/get_user_info.php";
 $nav ="";
 if(isset($_SESSION['username'])){
     $navigatie = [
         'index.php' => 'Home',
+<<<<<<< HEAD
         'users.php' => "Gebruikers",
+=======
+        'users.php' => "Users",
+>>>>>>> origin/master
 
     ];
     $dropdownNav = [
@@ -34,9 +39,9 @@ foreach ($dropdownNav as $key => $value){
     $attr = '';
     if( $key == $current )
     {
-        $attr = " class='active'";
+        $attr2 = " active";
     }
-    $nav_drop .= '<li' . $attr . '><a href=" '. $key . '">' . $value . '</a></li>';
+    $nav_drop .= '<li' . $attr2 . '><a href=" '. $key . '">' . $value . '</a></li>';
 }
 
 
@@ -48,24 +53,23 @@ foreach ($dropdownNav as $key => $value){
     <div class="nav-wrapper light-blue darken-1">
       <?php
        if(isset($_SESSION['username'])){
-           echo "<a href='dashboard.php' class='brand-logo right'><i class='material-icons prefix'>face</i> {$_SESSION['username']}</a>";
-       }
+      $results = getUserInfo();
+      foreach ($results as $row) {
+           echo "<a href='dashboard.php' class='brand-logo right'><img class='nav_pic' alt='Profile picture'src='uploads/{$row["profilepic"]}'></a>";
+       }}
         else{
-
+            echo "<a href='login.php' class='brand-logo right'><i class='material-icons prefix'>remove_circle</i></a>";
         }
         ?>
 
-        <?php
-        if(isset($_SESSION['username'])){
-            echo "<a href='dashboard.php' class='brand-logo right'> {$_SESSION['username']}</a>";
-        }
-        else{
-
-        }
-        ?>
         <ul >
-            <?php echo $nav ?>
-            <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Add<i class="material-icons right">arrow_drop_down</i></a></li>
+            <?php echo $nav;
+            if(isset($_SESSION['username'])){
+            echo '<li><a class="dropdown-button'. $attr2 .'" href="#!" data-activates="dropdown1">Add<i class="material-icons right">arrow_drop_down</i></a></li>';}
+            else{
+
+            };
+            ?>
         </ul>
         <ul id="dropdown1" class="dropdown-content">
             <?php echo $nav_drop ?>
