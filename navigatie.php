@@ -4,11 +4,7 @@ $nav ="";
 if(isset($_SESSION['username'])){
     $navigatie = [
         'index.php' => 'Home',
-<<<<<<< HEAD
-        'users.php' => "Gebruikers",
-=======
         'users.php' => "Users",
->>>>>>> origin/master
 
     ];
     $dropdownNav = [
