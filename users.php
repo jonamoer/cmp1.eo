@@ -56,7 +56,6 @@ if(isset($_GET["delete_id"])){
                         <th data-field="naam">Naam</th>
                         <th data-field="email">Email</th>
                         <th data-field="email">Profielfoto</th>
-                        <th data-fiels="delete">Delete</th>
                     </tr>
                     </thead>
 
@@ -72,7 +71,6 @@ if(isset($_GET["delete_id"])){
                                 src='uploads/{$row['profilepic']}'
                                  alt='Alternatief profiel foto'>
                         </td>";
-                        echo "<td><a href='users.php?delete_id={$row['id']}'><i class='material-icons'>delete</i></a></td>";
                         echo "</tr>";
                     }
                     ?>
