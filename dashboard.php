@@ -5,7 +5,7 @@ require_once 'header.php';
 /*Veradneren + aanpassing navigatie.php*/
 $current = 'dashboard.php';
 require_once 'navigatie.php';
-require_once "functions/get_user_info.php";
+require "functions/get_user_info.php";
 ?>
 
 <main>
