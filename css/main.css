@@ -9,7 +9,10 @@ main {
     flex: 1 0 auto;
 }
 
-h4 { display: inline }
+h4 {
+    display: inline;
+    line-height: 200%;
+}
 
 .bg-success{
     padding:10px;
