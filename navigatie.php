@@ -3,7 +3,7 @@ $nav ="";
 if(isset($_SESSION['username'])){
     $navigatie = [
         'index.php' => 'Home',
-        'users.php' => "gebruikers",
+        'users.php' => "Gebruikers",
 
     ];
     $dropdownNav = [
