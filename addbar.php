@@ -49,6 +49,22 @@ function getAllBars(){
     }
 }
 
+if(isset($_GET["delete_bars"])){
+    require "connectie.php";
+    $id = $_GET["delete_bars"];
+
+    try{
+        //verwijder dat record met die ID
+        $stmt = $db->prepare("DELETE FROM bar WHERE id=:id");
+        $stmt->bindParam(":id", $id);
+        $stmt->execute();
+        header("location: bars.php");
+    }
+    catch(PDOException $e){
+        $message = $e;
+    }
+}
+
 ?>
 
 <main>
@@ -94,7 +110,7 @@ function getAllBars(){
                         echo "<tr>";
                         echo "<td>{$row['naam']}</td>";
                         echo "<td>{$row['adres']}</td>";
-                        echo "<td><a href='bars.php?delete_bars={$row['id']}'><i class='material-icons'>delete</i></a></td>";
+                        echo "<td><a href='addbar.php?delete_bars={$row['id']}'><i class='material-icons'>delete</i></a></td>";
                         echo "</tr>";
                     }
                     ?>
