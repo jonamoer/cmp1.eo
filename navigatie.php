@@ -46,6 +46,7 @@ foreach ($dropdownNav as $key => $value){
 
 <nav>
     <div class="nav-wrapper light-blue darken-1">
+
         <?php
         if(isset($_SESSION['username'])){
             echo "<a href='dashboard.php' class='brand-logo right'> {$_SESSION['username']}</a>";
@@ -54,7 +55,6 @@ foreach ($dropdownNav as $key => $value){
 
         }
         ?>
-
         <ul >
             <?php echo $nav ?>
             <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Add<i class="material-icons right">arrow_drop_down</i></a></li>
