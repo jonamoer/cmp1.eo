@@ -8,6 +8,9 @@ body {
 main {
     flex: 1 0 auto;
 }
+
+h4 { display: inline }
+
 .bg-success{
     padding:10px;
     margin-top:20px;
@@ -24,5 +27,7 @@ main {
 }
 
 .highlighted {
+    display: inline;
     color: red;
+    text-transform: uppercase;
 }

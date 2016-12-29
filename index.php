@@ -74,54 +74,50 @@ function getAllFood(){
 
 <main>
     <div class="container">
-        <div class="row">
 
+        <div class="row">
             <!--Bars-->
             <div class="col l12">
                 <h3>Randomize</h3>
-
-
                 <?php
                 $results = getAllResto();
                 foreach ($results as $row){
 
-                    echo "<h4>Vanavond gaan we naar {$row['naam']}</h4>";
+                    echo "<h4>Vanavond gaan we naar " . "<div class='highlighted'>{$row['naam']}</div> en" . "</h4>";
                 }
 
                 $results = getAllFood();
                 foreach ($results as $row){
 
-                    echo "<h4>We eten {$row['eten']}</h4>";
+                    echo "<h4> we eten " . "<div class='highlighted'>{$row['eten']}</div>." . "</h4>";
                 }
 
                 $results = getAllBars();
                 foreach ($results as $row){
 
-                    echo "<h4>Daarna gaan we naar {$row['naam']}</h4>";
+                    echo "<h4> Daarna gaan we naar " . "<div class='highlighted'>{$row['naam']}</div>" . "</h4>";
                 }
 
                 $results = getAllBooze();
                 foreach ($results as $row){
 
-                    echo "<h4>en we drinken de hele avond " . "{$row['drank']}" . "</h4>";
+                    echo "<h4> en we drinken de hele avond " . "<div class='highlighted'>{$row['drank']}</div>." . "</h4>";
                 }
 
 
                 ?>
-
             </div>
+            <!--End bars-->
+        </div>
+
+        <div class="row">
 
             <div class="col s12" >
-                <a href="javascript:history.go(0)"><button class="btn waves-effect waves-light" type="submit" >
-                    Randomize again
-                    <i class="material-icons right">refresh</i>
-                </button></a>
+                <button class="btn waves-effect waves-light" type="button" value="Reload Page" onClick="window.location.reload()"">
+                        Randomize again
+                        <i class="material-icons right">refresh</i>
+                    </button>
             </div>
-
-
-            <!--End bars-->
-
-
         </div>
     </div>
 </main>
