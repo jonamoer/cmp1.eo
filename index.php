@@ -113,7 +113,7 @@ function getAllFood(){
         <div class="row">
 
             <div class="col s12" >
-                <button class="btn waves-effect waves-light" type="button" value="Reload Page" onClick="window.location.reload()"">
+                <button class="btn waves-effect waves-light" type="button" value="Reload Page" onClick="window.location.href=window.location.href">
                         Randomize again
                         <i class="material-icons right">refresh</i>
                     </button>
