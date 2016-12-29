@@ -34,7 +34,7 @@ foreach ($dropdownNav as $key => $value){
     $attr = '';
     if( $key == $current )
     {
-        $attr = "";
+        $attr = " class='active'";
     }
     $nav_drop .= '<li' . $attr . '><a href=" '. $key . '">' . $value . '</a></li>';
 }
@@ -46,7 +46,6 @@ foreach ($dropdownNav as $key => $value){
 
 <nav>
     <div class="nav-wrapper light-blue darken-1">
-<<<<<<< HEAD
       <?php
        if(isset($_SESSION['username'])){
            echo "<a href='dashboard.php' class='brand-logo right'><i class='material-icons prefix'>face</i> {$_SESSION['username']}</a>";
@@ -55,14 +54,12 @@ foreach ($dropdownNav as $key => $value){
 
         }
         ?>
-=======
 
         <?php
         if(isset($_SESSION['username'])){
             echo "<a href='dashboard.php' class='brand-logo right'> {$_SESSION['username']}</a>";
         }
         else{
->>>>>>> origin/master
 
         }
         ?>
