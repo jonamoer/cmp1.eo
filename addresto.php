@@ -7,7 +7,7 @@ require_once 'header.php';?>
 <!------------------navigatie----------------------------->
 
 <?php
-$current = 'addresto';
+$current = 'addresto.php';
 require_once 'navigatie.php';
 
 if(isset($_POST['newResto'])){

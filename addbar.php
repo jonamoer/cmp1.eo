@@ -33,30 +33,75 @@ if(isset($_POST['newBar'])){
     }
 }
 
+function getAllBars(){
+    //database
+    require 'connectie.php';
+    try{
+        $stmt = $db->prepare("SELECT * FROM bar");
+        $stmt -> execute();
 
+        $results = $stmt->fetchAll();
+        return $results;
+
+    }
+    catch (PDOException $e){
+        $message = $e;
+    }
+}
 
 ?>
 
 <main>
     <div class="container">
-        <form class="col s12" method="POST" action="addbar.php">
-            <div class="row">
-                <h3>BAR</h3>
-                <div class="input-field col s6">
-                    <input name="naam" id="naam" type="text" class="validate">
-                    <label for="naam">Naam</label>
-                </div>
-                <div class="input-field col s6">
-                    <input name="adres" id="adres" type="text" class="validate">
-                    <label for="adres">Adres</label>
-                </div>
+
+        <div class="row">
+            <form class="col s12" method="POST" action="addbar.php">
+                <h3>BARS</h3>
+                    <div class="input-field col s6">
+                        <input name="naam" id="naam" type="text" class="validate">
+                        <label for="naam">Naam</label>
+                    </div>
+
+                    <div class="input-field col s6">
+                        <input name="adres" id="adres" type="text" class="validate">
+                        <label for="adres">Adres</label>
+                    </div>
+
                 <div class="col s12" >
                     <button id="newBar"class="btn waves-effect waves-light" type="submit" name="newBar">Add bar
                         <i class="material-icons right">send</i>
                     </button>
                 </div>
+            </form>
+        </div>
+
+        <div class="row">
+            <div class="col l12">
+                <h4>Bars</h4>
+                <table class="highlight responsive-table bordered">
+                    <thead>
+                    <tr>
+                        <th data-field="name">Bar</th>
+                        <th data-field="adres">Adres</th>
+                        <th data-fiels="delete">Delete</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <?php
+                    $results = getAllBars();
+                    foreach ($results as $row){
+                        echo "<tr>";
+                        echo "<td>{$row['naam']}</td>";
+                        echo "<td>{$row['adres']}</td>";
+                        echo "<td><a href='bars.php?delete_bars={$row['id']}'><i class='material-icons'>delete</i></a></td>";
+                        echo "</tr>";
+                    }
+                    ?>
+                    </tbody>
+                </table>
             </div>
-        </form>
+        </div>
     </div>
 </main>
 

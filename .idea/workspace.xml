@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2b90b492-a82c-41dd-84f1-f419c5291501" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addbar.php" afterPath="$PROJECT_DIR$/addbar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addresto.php" afterPath="$PROJECT_DIR$/addresto.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bars.php" afterPath="$PROJECT_DIR$/bars.php" />
     </list>
     <ignored path="cmp1.eo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,16 +27,68 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="addbar.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addbar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-20.875">
+              <caret line="78" column="31" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="31" />
+              <folding>
+                <marker date="1483018103000" expanded="true" signature="336:388" placeholder="INSERT INTO bar... " />
+                <marker date="1483018103000" expanded="true" signature="755:772" placeholder="SELECT * FRO... bar" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5412844">
-              <caret line="105" column="90" selection-start-line="105" selection-start-column="20" selection-end-line="105" selection-end-column="90" />
+            <state vertical-scroll-proportion="-37.5">
+              <caret line="60" column="41" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
               <folding>
-                <marker date="1483008921000" expanded="true" signature="254:298" placeholder="SELECT naam bar" />
-                <marker date="1483008921000" expanded="true" signature="569:616" placeholder="SELECT drank... drank" />
-                <marker date="1483008921000" expanded="true" signature="887:933" placeholder="SELECT naam resto" />
-                <marker date="1483008921000" expanded="true" signature="1203:1248" placeholder="SELECT eten eten" />
+                <marker date="1483018061000" expanded="true" signature="254:298" placeholder="SELECT naam bar" />
+                <marker date="1483018061000" expanded="true" signature="569:616" placeholder="SELECT drank... drank" />
+                <marker date="1483018061000" expanded="true" signature="887:933" placeholder="SELECT naam resto" />
+                <marker date="1483018061000" expanded="true" signature="1203:1248" placeholder="SELECT eten eten" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bars.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bars.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4434251">
+              <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+              <folding>
+                <marker date="1483018166000" expanded="true" signature="254:271" placeholder="SELECT * FRO... bar" />
+                <marker date="1483018166000" expanded="true" signature="543:562" placeholder="SELECT * FRO... drank" />
+                <marker date="1483018166000" expanded="true" signature="902:930" placeholder="DELETE FROM " />
+                <marker date="1483018166000" expanded="true" signature="1280:1310" placeholder="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addresto.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addresto.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.625">
+              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+              <folding>
+                <marker date="1483018103000" expanded="true" signature="340:394" placeholder="INSERT INTO resto... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="checkBooze.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/checkBooze.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1482935991000" expanded="true" signature="259:278" placeholder="SELECT * FRO... drank" />
               </folding>
             </state>
           </provider>
@@ -51,76 +104,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="template.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addbar.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addbar.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-25.0">
-              <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
-              <folding>
-                <marker date="1483006818000" expanded="true" signature="336:388" placeholder="INSERT INTO bar... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="registreer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/registreer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1482924467000" expanded="true" signature="625:789" placeholder="INSERT INTO gebruiker... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addbooze.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addbooze.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-24.375">
-              <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
-              <folding>
-                <marker date="1483006860000" expanded="true" signature="312:353" placeholder="INSERT INTO drank... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addfood.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addfood.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-24.375">
-              <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
-              <folding>
-                <marker date="1483006860000" expanded="true" signature="308:346" placeholder="INSERT INTO eten... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addresto.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addresto.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-25.0">
-              <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
-              <folding>
-                <marker date="1483006860000" expanded="true" signature="336:390" placeholder="INSERT INTO resto... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -129,13 +112,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/addbar.php" />
         <option value="$PROJECT_DIR$/addbooze.php" />
         <option value="$PROJECT_DIR$/addfood.php" />
-        <option value="$PROJECT_DIR$/addresto.php" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/connectie.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/addresto.php" />
+        <option value="$PROJECT_DIR$/addbar.php" />
+        <option value="$PROJECT_DIR$/bars.php" />
       </list>
     </option>
   </component>
@@ -290,7 +274,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -299,20 +285,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1483008921000" expanded="true" signature="254:298" placeholder="SELECT naam bar" />
-            <marker date="1483008921000" expanded="true" signature="569:616" placeholder="SELECT drank... drank" />
-            <marker date="1483008921000" expanded="true" signature="887:933" placeholder="SELECT naam resto" />
-            <marker date="1483008921000" expanded="true" signature="1203:1248" placeholder="SELECT eten eten" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addbar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.0">
-          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
-          <folding>
-            <marker date="1483006818000" expanded="true" signature="336:388" placeholder="INSERT INTO bar... " />
+            <marker date="1483018061000" expanded="true" signature="254:298" placeholder="SELECT naam bar" />
+            <marker date="1483018061000" expanded="true" signature="569:616" placeholder="SELECT drank... drank" />
+            <marker date="1483018061000" expanded="true" signature="887:933" placeholder="SELECT naam resto" />
+            <marker date="1483018061000" expanded="true" signature="1203:1248" placeholder="SELECT eten eten" />
           </folding>
         </state>
       </provider>
@@ -333,16 +309,6 @@
           <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
           <folding>
             <marker date="1483006860000" expanded="true" signature="308:346" placeholder="INSERT INTO eten... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addresto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.0">
-          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
-          <folding>
-            <marker date="1483006860000" expanded="true" signature="336:390" placeholder="INSERT INTO resto... " />
           </folding>
         </state>
       </provider>
@@ -381,15 +347,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/checkBooze.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1482935991000" expanded="true" signature="259:278" placeholder="SELECT * FRO... drank" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addresto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.625">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding>
+            <marker date="1483018103000" expanded="true" signature="340:394" placeholder="INSERT INTO resto... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5412844">
-          <caret line="105" column="90" selection-start-line="105" selection-start-column="20" selection-end-line="105" selection-end-column="90" />
+        <state vertical-scroll-proportion="-37.5">
+          <caret line="60" column="41" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
           <folding>
-            <marker date="1483008921000" expanded="true" signature="254:298" placeholder="SELECT naam bar" />
-            <marker date="1483008921000" expanded="true" signature="569:616" placeholder="SELECT drank... drank" />
-            <marker date="1483008921000" expanded="true" signature="887:933" placeholder="SELECT naam resto" />
-            <marker date="1483008921000" expanded="true" signature="1203:1248" placeholder="SELECT eten eten" />
+            <marker date="1483018061000" expanded="true" signature="254:298" placeholder="SELECT naam bar" />
+            <marker date="1483018061000" expanded="true" signature="569:616" placeholder="SELECT drank... drank" />
+            <marker date="1483018061000" expanded="true" signature="887:933" placeholder="SELECT naam resto" />
+            <marker date="1483018061000" expanded="true" signature="1203:1248" placeholder="SELECT eten eten" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addbar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.875">
+          <caret line="78" column="31" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="31" />
+          <folding>
+            <marker date="1483018103000" expanded="true" signature="336:388" placeholder="INSERT INTO bar... " />
+            <marker date="1483018103000" expanded="true" signature="755:772" placeholder="SELECT * FRO... bar" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bars.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4434251">
+          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+          <folding>
+            <marker date="1483018166000" expanded="true" signature="254:271" placeholder="SELECT * FRO... bar" />
+            <marker date="1483018166000" expanded="true" signature="543:562" placeholder="SELECT * FRO... drank" />
+            <marker date="1483018166000" expanded="true" signature="902:930" placeholder="DELETE FROM " />
+            <marker date="1483018166000" expanded="true" signature="1280:1310" placeholder="DELETE FROM " />
           </folding>
         </state>
       </provider>
