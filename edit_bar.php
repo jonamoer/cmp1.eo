@@ -11,7 +11,7 @@ if(isset($_POST['editBar'])){
     require ("connectie.php");
     $naam = $_POST["naam"];
     $adres = $_POST["adres"];
-    $id = $_POST['edit_id'];
+    $id = $_GET['edit_id'];
 
     try{
         $stmt = $db->prepare("UPDATE bar SET naam=:naam, adres=:adres, WHERE id=:id");
@@ -45,6 +45,11 @@ if(isset($_POST['editBar'])){
                             <div class="input-field col s6">
                                 <input name="adres" type="text" class="validate" value="<?php echo $row["adres"]; ?>">
                                 <label >Adres</label>
+                            </div>
+
+                            <div class="input-field col s6">
+                                <input name="adres" type="text" class="validate" value="<?php echo $row["id"]; ?>">
+                                <label >Nieuw Id</label>
                             </div>
 
                             <div class="col s12" >
