@@ -58,7 +58,7 @@ if(isset($_GET["delete_bars"])){
         $stmt = $db->prepare("DELETE FROM bar WHERE id=:id");
         $stmt->bindParam(":id", $id);
         $stmt->execute();
-        header("location: bars.php");
+        header("location: addbar.php");
     }
     catch(PDOException $e){
         $message = $e;
@@ -100,6 +100,7 @@ if(isset($_GET["delete_bars"])){
                         <th data-field="name">Bar</th>
                         <th data-field="adres">Adres</th>
                         <th data-fiels="delete">Delete</th>
+                        <th data-fiels="delete">Bewerk</th>
                     </tr>
                     </thead>
 
@@ -111,6 +112,7 @@ if(isset($_GET["delete_bars"])){
                         echo "<td>{$row['naam']}</td>";
                         echo "<td>{$row['adres']}</td>";
                         echo "<td><a href='addbar.php?delete_bars={$row['id']}'><i class='material-icons'>delete</i></a></td>";
+                        echo "<td><a href='edit_bar.php?edite_id={$row['id']}'><i class='material-icons'>edite</i></a></td>";
                         echo "</tr>";
                     }
                     ?>
