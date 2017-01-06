@@ -1,7 +1,7 @@
 <footer class="page-footer light-blue darken-1">
     <div class="footer-copyright">
         <div class="container">
-            © 2014 Copyright Text
+            © 2016 Copyright Text
 
             <a class="grey-text text-lighten-4 right" href="login.php">
                 <?php if(isset($_SESSION['username'])){
