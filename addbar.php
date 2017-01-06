@@ -74,12 +74,12 @@ if(isset($_GET["delete_bars"])){
             <form class="col s12" method="POST" action="addbar.php">
                 <h3>BARS</h3>
                     <div class="input-field col s6">
-                        <input name="naam" id="naam" type="text" class="validate">
+                        <input name="naam" id="naam" type="text" required class="validate">
                         <label for="naam">Naam</label>
                     </div>
 
                     <div class="input-field col s6">
-                        <input name="adres" id="adres" type="text" class="validate">
+                        <input name="adres" id="adres" type="text" required class="validate">
                         <label for="adres">Adres</label>
                     </div>
 
@@ -112,7 +112,7 @@ if(isset($_GET["delete_bars"])){
                         echo "<td>{$row['naam']}</td>";
                         echo "<td>{$row['adres']}</td>";
                         echo "<td><a href='addbar.php?delete_bars={$row['id']}'><i class='material-icons'>delete</i></a></td>";
-                        echo "<td><a href='edit_bar.php?edite_id={$row['id']}'><i class='material-icons'>edite</i></a></td>";
+                        echo "<td><a href='edit_bar.php?edit_id={$row['id']}'><i class='material-icons'>edit</i></a></td>";
                         echo "</tr>";
                     }
                     ?>

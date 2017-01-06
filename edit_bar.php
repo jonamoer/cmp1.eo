@@ -7,11 +7,12 @@ require_once 'navigatie.php';
 require_once "functions/get_user_info.php";
 
 if(isset($_POST['editBar'])){
-    //geklikt op de edite knop
+    //geklikt op de edit knop
     require ("connectie.php");
+
     $naam = $_POST["naam"];
     $adres = $_POST["adres"];
-    $id = $_GET['edit_id'];
+    $id = $_POST['userid'];
 
     try{
         $stmt = $db->prepare("UPDATE bar SET naam=:naam, adres=:adres, WHERE id=:id");
@@ -28,39 +29,54 @@ if(isset($_POST['editBar'])){
     }
 }
 
+if(isset($_GET['edit_id']) && !empty($_GET['edit_id'])){
+    //EDIT_ID BESTAAT,JUIJ
+    $id = $_GET['edit_id'];
+
+    //GEGEVENS OPROEPEN WAAR ID HET ZELFDE IS
+    require("connectie.php");
+    $stmt = $db->prepare("SELECT * FROM bar WHERE id=:sid");
+    $stmt->bindParam(":sid",$id);
+    $stmt->execute();
+    $result = $stmt->fetch();
+    //EXTRACTEN VAN GEGEVENS
+    extract($result);
+    //CONNECTIE SLUITEN
+    $db = null;
+}
 
 ?>
-    <main>
-        <div class="container">
-            <div class="row">
-                <form role="form" class="col s12" method="POST" action="edit_bar.php" enctype="multipart/form-data" >
-                    <div class="row">
-                        <div class="container">
+<main>
+    <div class="container">
+        <div class="row">
+            <form role="form" class="col s12" method="POST" action="edit_bar.php" enctype="multipart/form-data" >
+                <div class="row">
+                    <div class="container">
 
-                            <div class="input-field col s6">
-                                <input name="naam"  type="text" class="validate" value="<?php echo $row["naam"]; ?>">
-                                <label for="icon_prefix">Naam</label>
-                            </div>
+                        <div class="input-field col s6">
+                            <input id="naam" name="naam"  type="text" class="validate" required value="<?php echo $naam; ?>">
+                            <label for="naam">Naam</label>
+                        </div>
 
-                            <div class="input-field col s6">
-                                <input name="adres" type="text" class="validate" value="<?php echo $row["adres"]; ?>">
-                                <label >Adres</label>
-                            </div>
+                        <div class="input-field col s6">
+                            <input id="adres" name="adres" type="text" class="validate" required value="<?php echo $adres; ?>">
+                            <label for="adres">Adres</label>
+                        </div>
 
-                            <div class="input-field col s6">
-                                <input name="adres" type="text" class="validate" value="<?php echo $row["id"]; ?>">
-                                <label >Nieuw Id</label>
-                            </div>
+                        <div class="input-field col s6">
+                            <input id="userid" name="userid" type="text" class="validate" required readonly="" value="<?php echo $id; ?>">
+                            <label for="id">Nieuw Id</label>
+                        </div>
 
-                            <div class="col s12" >
-                                <button id="editBar" class="btn waves-effect waves-light" type="submit" name="editBar">Edit Bar
-                                    <i class="material-icons right">send</i>
-                                </button>
-                            </div>
+                        <div class="col s12" >
+                            <button id="editBar" name="editBar" class="btn waves-effect waves-light" type="submit" >Edit Bar
+                                <i class="material-icons right">send</i>
+                            </button>
                         </div>
                     </div>
-                </form>
-            </div>
+                </div>
+            </form>
         </div>
-    </main>
+    </div>
+</main>
 <?php require_once 'footer.php'; ?>
