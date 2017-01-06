@@ -15,7 +15,7 @@ if(isset($_POST['editBar'])){
     $id = $_POST['userid'];
 
     try{
-        $stmt = $db->prepare("UPDATE bar SET naam=:naam, adres=:adres, WHERE id=:id");
+        $stmt = $db->prepare("UPDATE bar SET naam=:naam, adres=:adres WHERE id=:id");
         $stmt->bindParam(":naam", $naam);
         $stmt->bindParam(":adres", $adres);
         $stmt->bindParam(":id", $id);
