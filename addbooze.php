@@ -90,6 +90,7 @@ if(isset($_GET["delete_drank"])){
                     <tr>
                         <th data-field="name">Booze</th>
                         <th data-fiels="delete">Delete</th>
+                        <th data-fiels="delete">Bewerk</th>
                     </tr>
                     </thead>
 
@@ -100,6 +101,7 @@ if(isset($_GET["delete_drank"])){
                         echo "<tr>";
                         echo "<td>{$row['drank']}</td>";
                         echo "<td><a href='addbooze.php?delete_drank={$row['id']}'><i class='material-icons'>delete</i></a></td>";
+                        echo "<td><a href='edit_booze.php?edit_id={$row['id']}'><i class='material-icons'>edit</i></a></td>";
                         echo "</tr>";
                     }
                     ?>

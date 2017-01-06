@@ -96,6 +96,7 @@ if(isset($_GET["delete_resto"])){
                         <th data-field="name">Resto</th>
                         <th data-field="adres">Adres</th>
                         <th data-fiels="delete">Delete</th>
+                        <th data-fiels="delete">Bewerk</th>
                     </tr>
                     </thead>
 
@@ -107,6 +108,7 @@ if(isset($_GET["delete_resto"])){
                         echo "<td>{$row['naam']}</td>";
                         echo "<td>{$row['adres']}</td>";
                         echo "<td><a href='addresto.php?delete_resto={$row['id']}'><i class='material-icons'>delete</i></a></td>";
+                        echo "<td><a href='edit_resto.php?edit_id={$row['id']}'><i class='material-icons'>edit</i></a></td>";
                         echo "</tr>";
                     }
                     ?>
