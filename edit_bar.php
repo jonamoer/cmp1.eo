@@ -30,7 +30,7 @@ if(isset($_POST['editBar'])){
 }
 
 if(isset($_GET['edit_id']) && !empty($_GET['edit_id'])){
-    //EDIT_ID BESTAAT,JUIJ
+
     $id = $_GET['edit_id'];
 
     //GEGEVENS OPROEPEN WAAR ID HET ZELFDE IS
@@ -49,7 +49,7 @@ if(isset($_GET['edit_id']) && !empty($_GET['edit_id'])){
 <main>
     <div class="container">
         <div class="row">
-            <form role="form" class="col s12" method="POST" action="edit_bar.php" enctype="multipart/form-data" >
+            <form role="form" class="col s12" method="POST" action="edit_bar.php">
                 <div class="row">
                     <div class="container">
 
@@ -64,7 +64,7 @@ if(isset($_GET['edit_id']) && !empty($_GET['edit_id'])){
                         </div>
 
                         <div class="input-field col s6">
-                            <input id="userid" name="userid" type="text" class="validate" required readonly="" value="<?php echo $id; ?>">
+                            <input id="userid" name="userid" type="text" class="validate" required readonly value="<?php echo $id; ?>">
                             <label for="id">Nieuw Id</label>
                         </div>
 
