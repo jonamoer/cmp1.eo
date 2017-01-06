@@ -1,6 +1,7 @@
 <?php
 require "functions/get_user_info.php";
 $nav ="";
+$nav_drop ="";
 if(isset($_SESSION['username'])){
     $navigatie = [
         'index.php' => 'Home',
@@ -35,9 +36,9 @@ foreach ($dropdownNav as $key => $value){
     $attr = '';
     if( $key == $current )
     {
-        $attr2 = " active";
+        $attr = " active";
     }
-    $nav_drop .= '<li' . $attr2 . '><a href=" '. $key . '">' . $value . '</a></li>';
+    $nav_drop .= '<li' . $attr . '><a href=" '. $key . '">' . $value . '</a></li>';
 }
 
 
@@ -61,7 +62,7 @@ foreach ($dropdownNav as $key => $value){
         <ul >
             <?php echo $nav;
             if(isset($_SESSION['username'])){
-            echo '<li><a class="dropdown-button'. $attr2 .'" href="#!" data-activates="dropdown1">Add<i class="material-icons right">arrow_drop_down</i></a></li>';}
+            echo '<li><a class="dropdown-button" href="#!" data-activates="dropdown1">Add<i class="material-icons right">arrow_drop_down</i></a></li>';}
             else{
 
             };
