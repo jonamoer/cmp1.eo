@@ -2,7 +2,7 @@
     <div class="footer-copyright">
         <div class="container">
 
-            © 2016 Copyright Text
+            &copy;
 
             <script type="text/javascript">
                 document.write(new Date().getFullYear());
