@@ -1,7 +1,15 @@
 <footer class="page-footer light-blue darken-1">
     <div class="footer-copyright">
         <div class="container">
+
             © 2016 Copyright Text
+
+            <script type="text/javascript">
+                document.write(new Date().getFullYear());
+            </script> - Jonatan Moerman & Mathias Van Sele - Arteveldehogeschool
+
+
+
 
             <a class="grey-text text-lighten-4 right" href="login.php">
                 <?php if(isset($_SESSION['username'])){
